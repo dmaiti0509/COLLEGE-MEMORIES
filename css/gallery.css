@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
+.text-wave {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+.text-wave .wavy {
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.6));
+}
+
+.text-wave .wavy span {
+    position: relative;
+    display: inline-block;
+    color: #D65DB1;
+    font-size: 3em;
+    font-weight: 900;
+    animation: waving 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waving {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+    40%,100% {
+        transform: translateY(0px);
+    }
+}
+
+.gallery {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
+.gallery .circle-area {
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    overflow: hidden !important;
+}
+
+.gallery .circle-area .circle{
+    position: relative;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animated 25s linear infinite;
+    top: 150px;
+}
+
+.gallery .circle-area li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.5s;
+}
+
+.gallery .circle-area li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0.2s;
+    animation-duration: 12s;
+}
+
+.gallery .circle-area li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0.4s;
+}
+
+.gallery .circle-area li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0.5s;
+    animation-duration: 18s;
+}
+
+.gallery .circle-area li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0.5s;
+}
+
+.gallery .circle-area li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0.3s;
+}
+
+.gallery .circle-area li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0.7s;
+}
+
+.gallery .circle-area li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 0.15s;
+    animation-duration: 45s;
+}
+
+.gallery .circle-area li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0.2s;
+    animation-duration: 35s;
+}
+
+.gallery .circle-area li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0.5s;
+    animation-duration: 11s;
+}
+
+@keyframes animated{
+    0%
+    {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%
+    {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.gallery .list-friends{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.gallery .list-friends li {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    margin: 5px auto;
+    padding: 8px 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    transition: 0.4s linear;
+    
+}
+
+.gallery .list-friends li:hover {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.gallery .list-friends li.active {
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    color: #FFC75F;
+}
+
+.friends {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
+.friends .itembox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.friends .itembox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.9);
+    border-radius: 10px;
+}
+
+.pic-gallery {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pic-gallery .aryan-birth {
+    padding: 20px;
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+}
+
+.pic-gallery .aryan-birth ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.pic-gallery .aryan-birth ul li {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    margin: 5px auto;
+    padding: 8px 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    transition: 0.4s linear;
+}
+
+.pic-gallery .aryan-birth ul li:hover {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.pic-gallery .aryan-birth ul li.active {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    color: whitesmoke;
+}
+
+.pic-gallery .aryan-birth .items-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pic-gallery .aryan-birth .items-container .items {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.pic-gallery .aryan-birth .items-container .items img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.9);
+    border-radius: 10px;
+}
+
+.text-back {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.text-container {
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.text-container h1 {
+    font-size: 3em;
+    font-weight: 900;
+    background-image: url(../assets/colorful-rainbow-holi-paint-color-powder-explosion-isolated-white-wide-panorama-background-colorful-rainbow-holi-paint-color-143749617.jpg);
+    background-repeat: repeat-x;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-animate 15s linear infinite;
+}
+
+@keyframes text-animate {
+    0% {
+        background-position: left 0px top 10px;
+    }
+    40% {
+        background-position: left 800px top 10px;
+    }
+}
+
+.hrishikesh-birthday {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 800;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hrishikesh-birthday svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.hrishikesh-birthday .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.hrishikesh-birthday .text-copy:nth-child(1){
+	stroke: #FF9671;
+	animation-delay: -1;
+}
+
+.hrishikesh-birthday .text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.hrishikesh-birthday .text-copy:nth-child(3){
+	stroke: #CE3E2B;
+	animation-delay: -3s;
+}
+
+.hrishikesh-birthday .text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.hrishikesh-birthday .text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
