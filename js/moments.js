@@ -82,32 +82,32 @@ const slides = [
 {
   city: 'Party_Time',
   country: 'Khana Khazana',
-  img: '../assets/popular-post/IMG-20191117-WA0015.jpg' },
+  img: 'assets/popular-post/IMG-20191117-WA0015.jpg' },
 
 {
   city: 'Muskeeters',
   country: 'Gangs of SRMpur',
-  img: '../assets/popular-post/IMG-20191027-WA0036.jpg' },
+  img: 'assets/popular-post/IMG-20191027-WA0036.jpg' },
 
 {
   city: 'Celebration',
   country: 'Birthday Rampage',
-  img: '../assets/popular-post/IMG-20190905-WA0016.jpg' },
+  img: 'assets/popular-post/IMG-20190905-WA0016.jpg' },
 
 {
   city: 'Dilwale',
   country: 'Pyaar Ka Bandhan',
-  img: '../assets/popular-post/IMG20200108161033.jpg' },
+  img: 'assets/popular-post/IMG20200108161033.jpg' },
 
 {
   city: 'Meet_Up',
   country: 'Back To Pavilion',
-  img: '../assets/popular-post/IMG-20201114-WA0007.jpg' },
+  img: 'assets/popular-post/IMG-20201114-WA0007.jpg' },
 
 {
   city: 'Smart_Bros',
   country: 'Apna Time Aayega',
-  img: '../assets/popular-post/IMG-20200101-WA0042.jpg' }];
+  img: 'assets/popular-post/IMG-20200101-WA0042.jpg' }];
 
 
 
