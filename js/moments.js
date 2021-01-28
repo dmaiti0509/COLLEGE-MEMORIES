@@ -77,7 +77,7 @@ const slides = [
 {
   city: 'EEE_Batch',
   country: 'Diwali 2k19',
-  img: '../assets/popular-post/IMG-20191027-WA0038.jpg'},
+  img: './assets/popular-post/IMG-20191027-WA0038.jpg'},
 
 {
   city: 'Party_Time',
